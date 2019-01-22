@@ -1,0 +1,244 @@
+html, body {
+  /* background: black; */
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: 'Jaldi', sans-serif;
+  image-rendering: pixelated; }
+
+/* OVERALL */
+button {
+  background: white;
+  padding: 3px 4px;
+  margin: 0px 5px;
+  border: solid 1px grey;
+  border-radius: 0;
+  cursor: pointer;
+  outline: none; }
+  button.button__toggle[data-toggle='true'] {
+    background: #9393ac; }
+
+button:hover {
+  background: #ececec; }
+
+section.scene .scene__bounds .grid, section.scene .scene__bounds .cursor {
+  pointer-events: none;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none; }
+
+.container {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 100%; }
+
+/* Navigation */
+nav.project-navigation {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 5px 10px;
+  border-bottom: solid 1px #3d3d3d;
+  box-sizing: border-box; }
+  nav.project-navigation .brand {
+    padding-right: 10px;
+    border-right: solid 1px black;
+    cursor: default; }
+  nav.project-navigation button {
+    font-size: 1.2em;
+    border: none; }
+    nav.project-navigation button:hover {
+      background: unset;
+      color: grey; }
+    nav.project-navigation button.selected {
+      color: grey;
+      border-bottom: solid 1px grey;
+      cursor: default;
+      pointer-events: none; }
+
+.screens {
+  flex: 1; }
+
+/* Screen */
+section.screen {
+  display: flex;
+  width: 100%;
+  height: 100%; }
+
+aside > .title {
+  padding: 2px 4px;
+  font-size: 1.1em;
+  text-align: center; }
+
+/* Toolbar */
+aside.toolbar {
+  position: relative;
+  top: -1px;
+  min-width: 40px;
+  max-width: 80px;
+  height: calc(100% + 1px);
+  padding: 5px;
+  padding-top: 6px;
+  z-index: 20;
+  border-right: solid 1px grey;
+  border-top: solid 1px white;
+  box-sizing: border-box; }
+  aside.toolbar .toolbar__group {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+    grid-gap: 3px; }
+  aside.toolbar button.selected {
+    background: #d9d9ee; }
+
+/* Layers */
+aside.layers {
+  display: flex;
+  flex-flow: column;
+  /* --Layer-- */ }
+  aside.layers .layers__container {
+    flex: 1;
+    display: flex;
+    flex-flow: column-reverse;
+    justify-content: flex-start;
+    height: 100%; }
+  aside.layers .layer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 3px 5px;
+    border-top: solid 1px grey;
+    box-sizing: border-box; }
+    aside.layers .layer:first-child {
+      border-bottom: solid 1px grey; }
+    aside.layers .layer__preview {
+      background: #ebebeb;
+      width: 40px;
+      height: 40px;
+      overflow: hidden; }
+      aside.layers .layer__preview img[src='#'], aside.layers .layer__preview img[src='(undefined)'] {
+        display: none; }
+
+/* Scene */
+section.scene {
+  background: grey;
+  flex: 1; }
+  section.scene .scene__bounds {
+    position: relative;
+    width: 510px;
+    height: 408px;
+    border: solid 1px red;
+    overflow: hidden; }
+    section.scene .scene__bounds .layer {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0; }
+    section.scene .scene__bounds .grid {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background: url("/res/ui/grid2.png");
+      mix-blend-mode: color-dodge;
+      opacity: 0.2; }
+    section.scene .scene__bounds .cursor {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 17px;
+      height: 17px;
+      outline: solid 1px white; }
+
+.geometry.tile {
+  user-select: none;
+  pointer-events: none; }
+
+.geometry.waterfall {
+  background: url("/res/ui/geometry.png") no-repeat 0px 0px;
+  width: 17px;
+  height: 17px; }
+
+.geometry.solid {
+  background: url("/res/ui/geometry.png") no-repeat 0px -17px;
+  width: 17px;
+  height: 17px; }
+
+.geometry.slope-tl {
+  background: url("/res/ui/geometry.png") no-repeat -17px -17px;
+  width: 17px;
+  height: 17px; }
+
+.geometry.slope-tr {
+  background: url("/res/ui/geometry.png") no-repeat -34px 0px;
+  width: 17px;
+  height: 17px; }
+
+.geometry.slope-bl {
+  background: url("/res/ui/geometry.png") no-repeat 0px -34px;
+  width: 17px;
+  height: 17px; }
+
+.geometry.slope-br {
+  background: url("/res/ui/geometry.png") no-repeat -17px -34px;
+  width: 17px;
+  height: 17px; }
+
+.geometry.shortcut-path {
+  background: url("/res/ui/geometry.png") no-repeat -34px -17px;
+  width: 17px;
+  height: 17px;
+  z-index: 2; }
+
+.geometry.shortcut {
+  background: url("/res/ui/geometry.png") no-repeat -34px -34px;
+  width: 17px;
+  height: 17px; }
+
+.geometry.polev {
+  background: url("/res/ui/geometry.png") no-repeat 0px -51px;
+  width: 17px;
+  height: 17px; }
+
+.geometry.poleh {
+  background: url("/res/ui/geometry.png") no-repeat -51px 0px;
+  width: 17px;
+  height: 17px; }
+
+.geometry.glass {
+  background: url("/res/ui/geometry.png") no-repeat -17px -51px;
+  width: 17px;
+  height: 17px; }
+
+.geometry.floor {
+  background: url("/res/ui/geometry.png") no-repeat -51px -17px;
+  width: 17px;
+  height: 17px; }
+
+.geometry.crack-terrainv {
+  background: url("/res/ui/geometry.png") no-repeat -34px -51px;
+  width: 17px;
+  height: 17px; }
+
+.geometry.crack-terrainh {
+  background: url("/res/ui/geometry.png") no-repeat -51px -34px;
+  width: 17px;
+  height: 17px; }
+
+.geometry.crack-terrainb {
+  background: url("/res/ui/geometry.png") no-repeat 0px -68px;
+  width: 17px;
+  height: 17px; }
+
+.geometry.air {
+  background: url("/res/ui/geometry.png") no-repeat -68px 0px;
+  width: 17px;
+  height: 17px; }

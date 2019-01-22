@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rain World - Level Editor</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Jaldi" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Container -->
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="project-navigation">
+            <div class="brand">RW Level Editor</div>
+            <button>Main</button>
+            <button class="selected">Geometry</button>
+            <button>Tiles</button>
+            <button>Effects</button>
+            <button>Props</button>
+            <button>Camera</button>
+            <button>Render</button>
+        </nav>
+        <!-- /Navigation -->
+
+
+        <!-- Screens -->
+        <div class="screens">
+            <!-- MAIN -->
+            <!-- <section class="screen main">
+                <h2>Rain World Level Editor</h2>
+                <img src="#" alt="level preview">        
+            </section> -->
+            <!-- /MAIN -->
+            <!-- GEOMETRY -->
+            <section class="screen geometry">
+                <!-- Toolbar -->
+                <aside class="toolbar geometry">
+                    <div class="toolbar__group">
+                        <button class="selected" title="Paint Wall" data-value="solid">PW</button>
+                        <button title="Paint Air" data-value="air">PA</button>
+                        <button title="Paint Barrier" data-value="solid">PB</button>
+                    </div>
+                    <hr>
+                    <div class="toolbar__group">
+                        <button title="Make Slope" data-value="slope">MS</button>
+                        <button title="Make Floor" data-value="floor">MF</button>
+                        <button title="Make Tunnel" data-value="tunnel">MT</button>
+                    </div>
+                    <hr>
+                    <div class="toolbar__group">
+                        <button title="Place Rock">PR</button>
+                        <button title="Place Spear">PS</button>
+                    </div>
+                    <hr>
+                    <div class="toolbar__group">
+                        <button title="Place Waterfall" data-value="waterfall">PWF</button>
+                        <button title="Place Bat Hive">PBH</button>
+                        <button title="Forbid Batfly Chains">FBC</button>
+                    </div>
+                    <hr>
+                    <div class="toolbar__group">
+                        <button title="Horizontal Beam" data-value="poleh">HB</button>
+                        <button title="Vertical Beam" data-value="polev">VB</button>
+                    </div>
+                    <hr>
+                    <div class="toolbar__group">
+                        <button title="Make Shortcut Entrance" data-value="shortcut">SCE</button>
+                        <button title="Make Shortcut Path" data-value="shortcut-path">SCP</button>
+                    </div>
+                    <hr>
+                    <div class="toolbar__group">
+                        <button title="Make Mob Den">MD</button>
+                        <button title="Make Scav Entrance">SE</button>
+                        <button title="Make Mob Entrance">ME</button>
+                        <button title="Make Garbage Entrance">GE</button>
+                    </div>
+                    <hr>
+                    <div class="toolbar__group">
+                        <button title="Copy Tiles Backward">CB</button>
+                        <button title="Copy Tiles Forward">CF</button>
+                    </div>
+                    <hr>
+                    <div class="toolbar__group">
+                        <button title="Clear" data-value="clear">CLR</button>
+                        <button class="button__toggle" data-toggle title="Mirror Tiles">MRR</button>
+                    </div>
+                </aside>
+                <aside class="layers">
+                    <div class="layers__title title">Layers</div>
+                    <div class="layers__container">
+                        <div class="layer">
+                            <div class="layer__preview"><img src="#" alt="layer preview"></div>
+                            <div class="layer__name">Layer 1</div>
+                        </div>
+                        <div class="layer">
+                            <div class="layer__preview"><img src="#" alt="layer preview"></div>
+                            <div class="layer__name">Layer 1</div>
+                        </div>
+                        <div class="layer">
+                            <div class="layer__preview"><img src="#" alt="layer preview"></div>
+                            <div class="layer__name">Layer 1</div>
+                        </div>
+                        <div class="layer">
+                            <div class="layer__preview"><img src="#" alt="layer preview"></div>
+                            <div class="layer__name">Layer 1</div>
+                        </div>
+                        <div class="layer">
+                            <div class="layer__preview"><img src="#" alt="layer preview"></div>
+                            <div class="layer__name">Layer 1</div>
+                        </div>
+                    </div>
+                    <div class="layers__controls">
+                        <button>+</button>
+                        <button>-</button>
+                        <button>copy</button>
+                    </div>
+                </aside>
+                <!-- Scene -->
+                <section class="scene">
+                    <div class="scene__bounds" data-cursor-bounds>
+                        <!-- Layer 1 -->
+                        <div class="layer">
+                        </div>
+
+
+                        <!-- Grid layer -->
+                        <div class="grid"></div>
+                        <!-- Cursor layer -->
+                        <div class="cursor" data-cursor data-cursorName="geometry-cursor"></div>
+
+                    </div>
+                </section>
+                <!-- /Toolbar -->
+            </section>
+            <!-- /GEOMETRY -->
+        </div>
+        <!-- /Screens -->
+
+    </div>
+    <!-- /Container -->
+    
+</body>
+
+<script src="js/main.js"></script>
+</html>
