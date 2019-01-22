@@ -1,5 +1,5 @@
-# rw-level-editor
-A level editor for Rain World.
+# Rain World Level Editor
+A level editor for [Rain World](http://rainworldgame.com/).
 
 
 ## How to Use
