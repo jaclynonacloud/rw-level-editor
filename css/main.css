@@ -147,7 +147,7 @@ section.scene {
       bottom: 0;
       right: 0;
       left: 0;
-      background: url("res/ui/grid2.png");
+      background: url("web/res/ui/grid2.png");
       mix-blend-mode: color-dodge;
       opacity: 0.2; }
     section.scene .scene__bounds .cursor {
@@ -163,82 +163,82 @@ section.scene {
   pointer-events: none; }
 
 .geometry.waterfall {
-  background: url("res/ui/geometry.png") no-repeat 0px 0px;
+  background: url("web/res/ui/geometry.png") no-repeat 0px 0px;
   width: 17px;
   height: 17px; }
 
 .geometry.solid {
-  background: url("res/ui/geometry.png") no-repeat 0px -17px;
+  background: url("web/res/ui/geometry.png") no-repeat 0px -17px;
   width: 17px;
   height: 17px; }
 
 .geometry.slope-tl {
-  background: url("res/ui/geometry.png") no-repeat -17px -17px;
+  background: url("web/res/ui/geometry.png") no-repeat -17px -17px;
   width: 17px;
   height: 17px; }
 
 .geometry.slope-tr {
-  background: url("res/ui/geometry.png") no-repeat -34px 0px;
+  background: url("web/res/ui/geometry.png") no-repeat -34px 0px;
   width: 17px;
   height: 17px; }
 
 .geometry.slope-bl {
-  background: url("res/ui/geometry.png") no-repeat 0px -34px;
+  background: url("web/res/ui/geometry.png") no-repeat 0px -34px;
   width: 17px;
   height: 17px; }
 
 .geometry.slope-br {
-  background: url("res/ui/geometry.png") no-repeat -17px -34px;
+  background: url("web/res/ui/geometry.png") no-repeat -17px -34px;
   width: 17px;
   height: 17px; }
 
 .geometry.shortcut-path {
-  background: url("res/ui/geometry.png") no-repeat -34px -17px;
+  background: url("web/res/ui/geometry.png") no-repeat -34px -17px;
   width: 17px;
   height: 17px;
   z-index: 2; }
 
 .geometry.shortcut {
-  background: url("res/ui/geometry.png") no-repeat -34px -34px;
+  background: url("web/res/ui/geometry.png") no-repeat -34px -34px;
   width: 17px;
   height: 17px; }
 
 .geometry.polev {
-  background: url("res/ui/geometry.png") no-repeat 0px -51px;
+  background: url("web/res/ui/geometry.png") no-repeat 0px -51px;
   width: 17px;
   height: 17px; }
 
 .geometry.poleh {
-  background: url("res/ui/geometry.png") no-repeat -51px 0px;
+  background: url("web/res/ui/geometry.png") no-repeat -51px 0px;
   width: 17px;
   height: 17px; }
 
 .geometry.glass {
-  background: url("res/ui/geometry.png") no-repeat -17px -51px;
+  background: url("web/res/ui/geometry.png") no-repeat -17px -51px;
   width: 17px;
   height: 17px; }
 
 .geometry.floor {
-  background: url("res/ui/geometry.png") no-repeat -51px -17px;
+  background: url("web/res/ui/geometry.png") no-repeat -51px -17px;
   width: 17px;
   height: 17px; }
 
 .geometry.crack-terrainv {
-  background: url("res/ui/geometry.png") no-repeat -34px -51px;
+  background: url("web/res/ui/geometry.png") no-repeat -34px -51px;
   width: 17px;
   height: 17px; }
 
 .geometry.crack-terrainh {
-  background: url("res/ui/geometry.png") no-repeat -51px -34px;
+  background: url("web/res/ui/geometry.png") no-repeat -51px -34px;
   width: 17px;
   height: 17px; }
 
 .geometry.crack-terrainb {
-  background: url("res/ui/geometry.png") no-repeat 0px -68px;
+  background: url("web/res/ui/geometry.png") no-repeat 0px -68px;
   width: 17px;
   height: 17px; }
 
 .geometry.air {
-  background: url("res/ui/geometry.png") no-repeat -68px 0px;
+  background: url("web/res/ui/geometry.png") no-repeat -68px 0px;
   width: 17px;
   height: 17px; }
