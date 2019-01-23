@@ -147,7 +147,7 @@ section.scene {
       bottom: 0;
       right: 0;
       left: 0;
-      background: url("/res/ui/grid2.png");
+      background: url("../res/ui/grid2.png");
       mix-blend-mode: color-dodge;
       opacity: 0.2; }
     section.scene .scene__bounds .cursor {
